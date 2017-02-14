@@ -1,41 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 header {
     background-color: lightgrey;
-    height: 60px;
+    position: fixed;
+    padding: 10px;
+    background-color: #EEEEEE;
+    border-bottom: 1px solid #DDDDDD;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-nav ul {
-    float: right;
-    list-style: none;
-    
+nav {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
 }
 
-nav li {
-    display: inline-block;
-    list-style: none;
-    
+.nav-link {
+    padding-right: 10px;
 }
 
+a:link {
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
+}
 
-form input[type=text] {
+.logo {
+    font-size: 20px;
+    color: #000000;
+}
+
+.search {
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.search input[type=text] {
     width: 400px;
-    border: 1px solid grey;
+    border: 1px solid #DDDDDD;
     border-radius: 3px;
     height: 40px;
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    
 }
 
-form input[type=image] {
-    width: 60px;
-    border: 1px solid grey;
+.search input[type=image] {
+    width: 40px;
+    border: 1px solid #DDDDDD;
     border-radius: 3px;
     display: inline-block;
-    top: 15px;
+    vertical-align: bottom;
 }
 
-form img {
-    width: 30px;
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/*Pages*/
+
+.next-page {
+    display: inline-block;
+    font-size: 0;
+    margin-bottom: 30px;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+}
+
+.pages-button {
+    font-size: 16px;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+
+.pages-display {
+    font-size: 16px;
+    padding: 0 30px;
+    padding: 8px 25px;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+
+
+/*Job listings*/
+
+.listings {
+    list-style: none;
+    margin-left: 60px;
+}
+
+.listing {
+    padding-bottom: 10px;
+}
+
+.date,
+.location {
+    color: #999;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+section {
+    margin-left: 100px;
 }
